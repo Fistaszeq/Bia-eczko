@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supluś</title>
+    <style>
+        /* Styl główny */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Styl dla sekcji suplementów */
+        .products {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: white;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .product h2 {
+            color: #333;
+        }
+
+        /* Styl dla sekcji kontaktu */
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            color: #333;
+        }
+
+        .contact p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Supluś</h1>
+    </header>
+
+    <!-- menu -->
+    <nav>
+        <a href="#bialka">Białka</a>
+        <a href="#suplementy">Suplementy</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Sekcja Suplementy -->
+    <section class="products" id="suplementy">
+        <div class="product">
+            <img src="bialko.jpg" alt="Białko Whey">
+            <h2>Białko Whey</h2>
+            <p>Cena: 99 PLN</p>
+            <p>Opis: Najlepsze białko dla sportowców.</p>
+        </div>
+
+        <div class="product">
+            <img src="kreatyna.jpg" alt="Kreatyna Monohydrat">
+            <h2>Kreatyna Monohydrat</h2>
+            <p>Cena: 59 PLN</p>
+            <p>Opis: Zwiększenie siły i masy mięśniowej.</p>
+        </div>
+
+        <!-- i tak dalej -->
+    </section>
+
+    <!-- Kontakt Wizytówka -->
+    <section class="contact" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: kontakt@suplementysklep.pl</p>
+        <p>Telefon: +48 420 213 769</p>
+        <p>Adres: ul. Oława Jarosz 16</p>
+    </section>
+
+ 
+    <footer>
+        <p>&copy; 2024 Sklep z Biełeczkiem, Fistaszeq</p>
+    </footer>
+
+</body>
+</html>
