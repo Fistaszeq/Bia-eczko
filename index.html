@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>Protein</h1>
+    </header>
+
+    <!-- menu -->
+    <nav>
+        <a href="#bialka">Białka</a>
+        <a href="#suplementy">Suplementy</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Sekcja Suplementy -->
+
+    <!-- <section class="products" id="suplementy">
+        <div class="product">
+            <img src="bialko.jpg" alt="Białko Whey">
+            <h2>Białko Whey</h2>
+            <p>Cena: 99 PLN</p>
+            <p>Opis: Najlepsze białko dla sportowców.</p>
+        </div> -->
+
+
+        <!-- działanie skryptu php craftuje oferty -->
+        
+
+        <h1>Dane z bazy danych:</h1>
+        <div id="data"></div>
+    
+        <script>
+            fetch('database.php')
+                .then(response => response.json())
+                .then(data => {
+                    const dataDiv = document.getElementById('data');
+                    data.forEach(item => {
+                        const p = document.createElement('p');
+                        p.textContent = JSON.stringify(item);
+                        dataDiv.appendChild(p);
+                    });
+                })
+                .catch(error => console.error('Błąd:', error));
+        </script>
+
+     
+    </section>
+
+    <!-- Kontakt Wizytówka -->
+    <section class="contact" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: kontakt@suplementysklep.pl</p>
+        <p>Telefon: +48 420 213 769</p>
+        <p>Adres: ul. Oława Jarosz 16</p>
+    </section>
+
+ 
+    <footer>
+        <p>&copy; 2024 Sklep z Protein
+            , Fistaszeq</p>
+    </footer>
+
+</body>
+</html>
