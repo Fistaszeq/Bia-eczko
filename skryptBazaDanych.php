@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 $host = 'localhost';
-$dbname = 'twoja_baza';
+$dbname = 'protein';
 $user = 'root';
 $pass = '';
 
