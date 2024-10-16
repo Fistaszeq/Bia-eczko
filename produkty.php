@@ -85,7 +85,7 @@ footer {
     padding:1em;
 }
 footer {
-    background-color:#ff7f50;;
+    background-color:#ff7f50;
 }
 .btnP {
     box-shadow:5px 5px 7px gray;
