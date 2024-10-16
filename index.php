@@ -57,9 +57,22 @@
         #dwa {
             float:right;
         }
+        .rotate {
+            transform: rotate(360deg); /* Obrót o 360 stopni */
+        }
+        #pudzian {
+            transition: transform 1s; 
+            border-radius:1em;
+        }
+        button {
+            background-color:rgba(0, 0, 0, 0);
+            border: none;
+        }
     </style>
 </head>
 <body>
+
+<script src="script.js"></script>
 
     <!-- Header -->
 
@@ -77,7 +90,7 @@
     <main>
         <div class="benefit-section">
             <h2>Dlaczego warto ćwiczyć?</h2>
-            <img src="Pudzian.jpg" alt="Osoba ćwicząca" />
+            <button onclick="pudzianOb()"><img src="Pudzian.jpg" id="pudzian" alt="Osoba ćwicząca" /></button>
             <p>Regularna aktywność fizyczna przynosi wiele korzyści zdrowotnych:</p>
             
                 <p>Poprawia samopoczucie i redukuje stres oraz objawy lęku,
